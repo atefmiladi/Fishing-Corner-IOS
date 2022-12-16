@@ -1,0 +1,6 @@
+framework module Pods_FishingCornerIOS {
+  umbrella header "Pods-FishingCornerIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnnonceTableViewCell" rowHeight="124" id="KGk-i7-Jjw" customClass="AnnonceTableViewCell" customModule="FishingCornerIOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="124"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-image" translatesAutoresizingMaskIntoConstraints="NO" id="KQq-kj-2Cw" customClass="RoundedImageView" customModule="FishingCornerIOS" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="180" height="105"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" id="3Tp-TH-wQB"/>
+                            <constraint firstAttribute="height" constant="105" id="Kep-9Y-G7Y"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vpi-SH-X62">
+                        <rect key="frame" x="196" y="12" width="158" height="48"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taC-4a-aGb">
+                                <rect key="frame" x="0.0" y="0.0" width="158" height="21"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXu-46-Z7w">
+                                <rect key="frame" x="0.0" y="29" width="158" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55 317 899" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fd3-Oh-mC3">
+                        <rect key="frame" x="196" y="68" width="158" height="19"/>
+                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200 DT" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B01-Vh-ze6">
+                        <rect key="frame" x="196" y="90.5" width="158" height="21"/>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KQq-kj-2Cw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="0xL-dv-PDy"/>
+                    <constraint firstItem="Fd3-Oh-mC3" firstAttribute="leading" secondItem="KQq-kj-2Cw" secondAttribute="trailing" constant="8" symbolic="YES" id="2Ne-at-leN"/>
+                    <constraint firstAttribute="trailing" secondItem="Fd3-Oh-mC3" secondAttribute="trailing" constant="12" id="3Y1-7X-Ylx"/>
+                    <constraint firstItem="Fd3-Oh-mC3" firstAttribute="top" secondItem="vpi-SH-X62" secondAttribute="bottom" constant="8" symbolic="YES" id="6ci-cU-9s4"/>
+                    <constraint firstAttribute="trailing" secondItem="B01-Vh-ze6" secondAttribute="trailing" constant="12" id="9C6-c9-oPt"/>
+                    <constraint firstItem="vpi-SH-X62" firstAttribute="leading" secondItem="KQq-kj-2Cw" secondAttribute="trailing" constant="8" id="EOJ-wB-hda"/>
+                    <constraint firstItem="B01-Vh-ze6" firstAttribute="top" secondItem="Fd3-Oh-mC3" secondAttribute="bottom" constant="3.5" id="Eg4-yJ-zDP"/>
+                    <constraint firstItem="KQq-kj-2Cw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="VnW-LJ-Ejl"/>
+                    <constraint firstAttribute="trailing" secondItem="vpi-SH-X62" secondAttribute="trailing" constant="12" id="i4n-PN-rPL"/>
+                    <constraint firstItem="B01-Vh-ze6" firstAttribute="leading" secondItem="KQq-kj-2Cw" secondAttribute="trailing" constant="8" symbolic="YES" id="mXU-aj-DYJ"/>
+                    <constraint firstItem="vpi-SH-X62" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="qlu-uL-bM4"/>
+                    <constraint firstAttribute="bottom" secondItem="KQq-kj-2Cw" secondAttribute="bottom" constant="8" id="zh4-Ea-I7h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="annonceAdress" destination="dXu-46-Z7w" id="j04-o0-K7w"/>
+                <outlet property="annonceImage" destination="KQq-kj-2Cw" id="Eco-1a-j1v"/>
+                <outlet property="annoncePhoneNumber" destination="Fd3-Oh-mC3" id="IDI-Al-Dzg"/>
+                <outlet property="annoncePrice" destination="B01-Vh-ze6" id="3JG-Vw-Qov"/>
+                <outlet property="annonceTitle" destination="taC-4a-aGb" id="kjB-Kv-skC"/>
+            </connections>
+            <point key="canvasLocation" x="234.78260869565219" y="51.5625"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="KQq-kj-2Cw">
+            <size key="intrinsicContentSize" width="320" height="320"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="no-image" width="320" height="320"/>
+    </resources>
+</document>
